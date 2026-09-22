@@ -75,16 +75,47 @@ I separated **learner**, **program**, and **enrollment** information because one
 
 ---
 
-## 4. ER Diagram
+## 4. Entity Relationship Diagram
 
-![LearnAI ER Diagram](screenshots/01_database_structure.png)
+```mermaid
+erDiagram
+    LEARNERS ||--o{ ENROLLMENTS : has
+    PROGRAMS ||--o{ ENROLLMENTS : has
 
-### Relationship
+    LEARNERS {
+        INT learner_id PK
+        VARCHAR learner_name
+        VARCHAR experience_level
+        DATE join_date
+    }
 
-- One learner can have many enrollments.
-- One program can have many enrollments.
-- `enrollments` connects learners and programs.
-- Engagement and outcome measures belong to an enrollment because they describe a learner's participation in a particular program.
+    PROGRAMS {
+        INT program_id PK
+        VARCHAR program_name
+        VARCHAR category
+        INT duration_weeks
+    }
+
+    ENROLLMENTS {
+        INT enrollment_id PK
+        INT learner_id FK
+        INT program_id FK
+        DATE enrollment_date
+        INT sessions_completed
+        DECIMAL learning_hours
+        INT progress_pct
+        VARCHAR completion_status
+        DECIMAL final_score
+        DATE last_activity_date
+    }
+```
+
+### Relationship explanation
+
+- One learner can have multiple enrollments.
+- One program can have multiple enrollments.
+- `enrollments` acts as the bridge between learners and programs.
+- Engagement and outcome measures are stored in `enrollments` because they relate to a learner's participation in a particular program.
 
 ---
 
