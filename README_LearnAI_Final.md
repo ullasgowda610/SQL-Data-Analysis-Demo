@@ -8,8 +8,6 @@ The number of learners joining the platform is increasing, but LearnAI is not su
 
 This project uses **SQL and a dummy dataset** to investigate learner behaviour, program performance, engagement, completion and learning outcomes.
 
-> **Note:** This is a dummy dataset created for the graded project. The findings demonstrate the analysis approach and are not claims about actual LearnAI users.
-
 ## 2. Business Problem
 
 The analysis focuses on:
@@ -136,8 +134,6 @@ I followed a **business-question-first approach** rather than starting with SQL 
 
 The queries were selected based on the business problem rather than simply trying to demonstrate many SQL functions. Each query answers a specific business question and adds a different level of analysis.
 
-**2 Simple → 4 Intermediate → 2 Advanced**
-
 ## 7. Key Analytical Idea
 
 Participation should not automatically be treated as learning success.
@@ -180,18 +176,6 @@ SELECT, WHERE, ORDER BY, GROUP BY, COUNT, COUNT DISTINCT, AVG, CASE, INNER JOIN,
 
 ## 12. Project Files
 
-```text
-LearnAI-SQL-Analysis/
-├── README.md
-├── LearnAI_Dummy_Dataset.sql
-├── LearnAI_SQL_Analysis.sql
-└── screenshots/
-    ├── 01_database_structure.png
-    ├── 02_program_analysis.png
-    ├── 03_engagement_vs_outcome.png
-    └── 04_additional_business_question.png
-```
-
 ### File descriptions
 
 **`LearnAI_Dummy_Dataset.sql`**
@@ -207,19 +191,6 @@ LearnAI-SQL-Analysis/
 **`README.md`**
 - Documents the business problem, schema, attributes, ER diagram, analysis approach, query purposes and additional business question.
 
-## 13. Suggested Demo Screenshots
-
-1. **`01_database_structure.png`** — MySQL Workbench showing the `learnai` database and three tables.
-2. **`02_program_analysis.png`** — Q2 query and result.
-3. **`03_engagement_vs_outcome.png`** — Q5 query and result.
-4. **`04_additional_business_question.png`** — Q6 query and result.
-
-The ER diagram is already included in this README, so an additional ER screenshot is optional.
-
-## 14. Demo Flow
-
-**README → Business Problem → Dataset → ER Diagram → Analysis Approach → MySQL Workbench → SQL Queries → Results → Business Insights → Additional Business Question**
-
-## 15. Author
+## 13. Author
 
 **Ullas Y R**
