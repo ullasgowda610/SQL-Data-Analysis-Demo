@@ -148,6 +148,7 @@ The idea was not to use SQL functions just for demonstration. Each query answers
 
 ### Q1 – Overall platform health
 
+![Q1 output](01_overall_platform_health.png).
 The dummy dataset contains:
 
 - **16 enrollments**
@@ -162,7 +163,7 @@ This gives a baseline for the rest of the analysis.
 
 ### Q2 – Program comparison
 
-![Q2 output](screenshots/02_program_analysis.png)
+![Q2 output](02_program_analysis.png)
 
 The synthetic data shows differences between programs. SQL Foundations and Generative AI have a **75% completion rate**, while Python for Data and Data Visualization have **50%**.
 
@@ -187,7 +188,7 @@ The purpose is important because **completion alone does not fully describe lear
 
 ### Q5 – Engagement vs outcome
 
-![Q5 output](screenshots/03_engagement_vs_outcome.png)
+![Q5 output](03_engagement_vs_outcome.png)
 
 The dummy data shows a clear pattern between engagement and progress:
 
@@ -205,7 +206,7 @@ This is a pattern in the dummy data, not proof of causation.
 
 ### Q6 – Additional business question
 
-![Q6 output](screenshots/04_additional_business_question.png)
+![Q6 output](04_additional_business_question.png)
 
 The dummy data shows:
 
