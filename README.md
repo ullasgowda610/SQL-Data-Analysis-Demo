@@ -8,8 +8,6 @@ The platform is getting more learners, but the team wants to understand whether 
 
 This project uses **SQL and a dummy dataset** to investigate learner behaviour, program performance, engagement, completion and learning outcomes.
 
-> **Important:** The dataset is synthetic and created for this graded project. The findings below demonstrate the analysis approach; they are not claims about real LearnAI users.
-
 ---
 
 ## 2. Problem Statement
