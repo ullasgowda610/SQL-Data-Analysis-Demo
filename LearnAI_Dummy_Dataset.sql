@@ -1,5 +1,4 @@
 -- LearnAI: Dummy SQL Dataset for Graded Project
--- Designed for MySQL Workbench
 
 DROP DATABASE IF EXISTS learnai;
 CREATE DATABASE learnai;
