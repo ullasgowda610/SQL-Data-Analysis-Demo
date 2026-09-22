@@ -250,19 +250,6 @@ The SQL analysis provides four main observations from the **dummy dataset**:
 3. Higher engagement is associated with much higher progress in the synthetic data, but it does not automatically produce the highest final score.
 4. Beginners have the highest dropout rate in this dataset, which supports the additional question about onboarding and learner support.
 
-### Business interpretation
-
-The next step should be to investigate **why** learners disengage or drop out rather than looking only at completion percentages.
-
-Possible areas for deeper investigation include:
-
-- early onboarding experience,
-- program difficulty,
-- learner activity during the first few weeks,
-- support/intervention received,
-- and whether the program content matches learner experience level.
-
----
 
 ## 9. Important Assumptions and Limitations
 
@@ -284,38 +271,8 @@ Possible areas for deeper investigation include:
 
 ---
 
-## 11. Project Files
-
-```text
-LearnAI-SQL-Analysis/
-├── README.md
-├── LearnAI_Dummy_Dataset.sql
-├── LearnAI_SQL_Analysis.sql
-└── screenshots/
-    ├── 01_database_structure.png
-    ├── 01_overall_platform_health.png
-    ├── 02_program_analysis.png
-    ├── 03_engagement_vs_outcome.png
-    └── 04_additional_business_question.png
-```
-
-### How to run
-
-1. Open MySQL Workbench.
-2. Run `LearnAI_Dummy_Dataset.sql`.
-3. Run `LearnAI_SQL_Analysis.sql`.
-4. Execute the queries one by one.
-5. Compare the results with the output images in `screenshots/`.
 
 > For the final review, it is even better to run the queries yourself and capture the actual MySQL Workbench result grids.
-
----
-
-## 12. Demo Flow
-
-**Problem → Data model → ER diagram → Query purpose → SQL execution → Output → Business insight → Additional question**
-
----
 
 ## Author
 
