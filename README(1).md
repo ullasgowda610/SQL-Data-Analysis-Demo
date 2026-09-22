@@ -8,8 +8,6 @@ The number of learners joining the platform is increasing, but LearnAI is not su
 
 This project uses **SQL and a dummy dataset** to investigate learner behaviour, program performance, engagement, completion and learning outcomes.
 
-> **Important:** This is a dummy dataset created for the graded project. The findings demonstrate the analysis approach and are not claims about actual LearnAI users.
-
 ---
 
 ## 2. Business Problem
@@ -108,35 +106,7 @@ erDiagram
 
 ---
 
-## 5. Analysis Approach
-
-The analysis is **business-question first**, not query first.
-
-### Step 1 – Understand the overall situation
-Measure total enrollments, unique learners, completion, active learners and dropouts.
-
-### Step 2 – Compare programs
-Compare participation, progress and completion across programs.
-
-### Step 3 – Identify weak engagement
-Find learners with low session activity or low progress.
-
-### Step 4 – Compare engagement with outcomes
-Group learners by engagement level and compare progress and final score.
-
-### Step 5 – Investigate the additional business question
-Compare dropout rate, sessions and progress across experience levels.
-
-### Step 6 – Go deeper
-Use a subquery to find highly engaged learners with lower outcomes and a CTE/window function to rank programs.
-
-### Analysis flow
-
-**Overall Platform → Program Comparison → Weak Engagement → Engagement vs Outcome → Experience Level → Deeper Analysis**
-
----
-
-## 6. SQL Query Plan
+## 5. SQL Query Plan
 
 | Query | Business Question | Level | Main SQL Concepts |
 |---|---|---|---|
@@ -151,23 +121,9 @@ Use a subquery to find highly engaged learners with lower outcomes and a CTE/win
 
 This gives the project a balanced progression:
 
-**2 simple → 4 intermediate → 2 advanced**
-
 ---
 
-## 7. Key Analytical Idea
-
-Participation should not automatically be treated as learning success.
-
-The analysis considers:
-
-**Engagement → Progress → Completion → Learning Outcome**
-
-Sessions and learning hours indicate activity, while progress, completion status and final score provide additional information about outcomes.
-
----
-
-## 8. ⭐ Additional Business Question
+## 6. ⭐ Additional Business Question
 
 > **Are beginners dropping out more often than experienced learners, and should onboarding/support be different by experience level?**
 
@@ -176,18 +132,7 @@ This question is based on the available `experience_level`, `completion_status`,
 If a difference appears in the dummy analysis, the next step would be to investigate the underlying reason rather than assuming experience level itself is the cause.
 
 ---
-
-## 9. Important Assumptions
-
-- The dataset is intentionally small and created for demonstration.
-- The **7-session** and **50% progress** thresholds in Q3 are analytical thresholds for this dummy project.
-- In a real platform, these thresholds should be validated using historical learner behaviour.
-- `final_score` is NULL for incomplete enrollments, so average score calculations naturally exclude those rows.
-- The results should be interpreted as examples of SQL-driven analysis, not production business conclusions.
-
----
-
-## 10. SQL Concepts Demonstrated
+## 7. SQL Concepts Demonstrated
 
 - SELECT
 - WHERE
@@ -206,7 +151,7 @@ If a difference appears in the dummy analysis, the next step would be to investi
 
 ---
 
-## 11. Tools Used
+## 8. Tools Used
 
 - MySQL
 - MySQL Workbench
@@ -215,20 +160,7 @@ If a difference appears in the dummy analysis, the next step would be to investi
 
 ---
 
-## 12. Project Files
-
-```text
-LearnAI-SQL-Analysis/
-│
-├── README.md
-├── LearnAI_Dummy_Dataset.sql
-├── LearnAI_SQL_Analysis.sql
-└── screenshots/
-    ├── 01_database_structure.png
-    ├── 02_program_analysis.png
-    ├── 03_engagement_vs_outcome.png
-    └── 04_additional_business_question.png
-```
+## 9. Project Files
 
 ### File descriptions
 
@@ -251,58 +183,6 @@ LearnAI-SQL-Analysis/
 
 ---
 
-## 13. Suggested Demo Screenshots
-
-Keep the README visual but not overloaded.
-
-### Screenshot 1 – Database structure
-Show MySQL Workbench with:
-
-```text
-learnai
-  Tables
-   ├── learners
-   ├── programs
-   └── enrollments
-```
-
-Suggested filename:
-
-`01_database_structure.png`
-
-### Screenshot 2 – Program analysis
-Show Q2 SQL and its output.
-
-Suggested filename:
-
-`02_program_analysis.png`
-
-### Screenshot 3 – Engagement vs outcome
-Show Q5 SQL and its output.
-
-Suggested filename:
-
-`03_engagement_vs_outcome.png`
-
-### Screenshot 4 – Additional business question
-Show Q6 SQL and its output.
-
-Suggested filename:
-
-`04_additional_business_question.png`
-
-> The ER diagram is already included above, so an additional ER screenshot is optional.
-
----
-
-## 14. Expected Presentation Flow
-
-**Problem → Data Model → SQL Questions → Results → Business Insight → Additional Question**
-
-During the demo, the README can remain open as the project guide while MySQL Workbench is used for SQL execution.
-
----
-
-## 15. Author
+## 10. Author
 
 **Ullas Y R**
