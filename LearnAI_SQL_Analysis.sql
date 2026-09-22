@@ -1,6 +1,4 @@
 -- LearnAI SQL Business Analysis
--- MySQL Workbench
--- Run LearnAI_Dummy_Dataset.sql first, then execute these queries one by one.
 
 USE learnai;
 
