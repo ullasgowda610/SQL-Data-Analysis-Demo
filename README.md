@@ -12,10 +12,11 @@ This project uses **SQL and a dummy dataset** to investigate learner behaviour, 
 
 The analysis focuses on:
 
-1. Are learners remaining active after joining?
-2. Which programs show differences in participation and completion?
-3. What learner behaviour may indicate weak engagement?
-4. Does higher participation necessarily mean better learning outcomes?
+1. Are learners actually engaging?
+2. Are all programs performing similarly?
+3. What indicates weak engagement?
+4. Does more participation actually mean better outcomes?
+
 5. **Additional Business Question: Are beginners dropping out more often than experienced learners, and should onboarding/support be different by experience level?**
 
 ## 3. Dataset Design
