@@ -11,6 +11,8 @@ This project uses **SQL and a dummy dataset** to investigate learner behaviour, 
 ---
 
 ## 2. Problem Statement
+The business has a growing number of learners,but they don't know whether the growth is producing meaningful learning outcomes.
+
 
 The analysis asks:
 
