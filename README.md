@@ -18,7 +18,6 @@ The analysis asks:
 2. How do learning programs differ in participation and completion?
 3. Which learners show possible signs of weak engagement?
 4. Does higher participation correspond to better learning outcomes?
-5. What additional business question should LearnAI explore based on the findings?
 
 ### Additional business question
 
